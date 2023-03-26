@@ -81,7 +81,7 @@ clear all
 *** 3.1. NBI1: Vivienda inadecuada
 
 	use 		"enaho01-2018-100", clear
-	gen 		xnbi1 = p101 == 6 | p102 == 8 | ((inlist(p102, 5, 6, 7, 9) & p103 == 6))
+	generate 	xnbi1 = p101 == 6 | p102 == 8 | ((inlist(p102, 5, 6, 7, 9) & p103 == 6))
 	sort 		conglome vivienda hogar
 	collapse 	(max) xnbi1, by(conglome vivienda)
 	tempfile	`nbi1_2018'
@@ -136,7 +136,7 @@ clear all
 *** 3.3. NBI3: Hogares con vivienda sin servicios higiénicos
 
 	use 		"enaho01-2018-100.dta", clear
-	gen 		xnbi3 = inlist(t111a, 6, 7, 9) if result <= 2
+	generate 	xnbi3 = inlist(t111a, 6, 7, 9) if result <= 2
 	sort 		conglome vivienda hogar
 	collapse 	(max) xnbi3, by(conglome vivienda hogar)
 	tempfile	`nbi3_2018'
