@@ -3,9 +3,9 @@ clear all
 *******************************************************************************************
 * BASE DE DATOS:	ENAHO
 * PROYECTO: 		INDICADORES ECONÓMICOS Y SOCIALES                           		
-* TÍTULO:			METODOLOGÍA DE CÁLCULO DE NBIs
-* AÑO:				2018
-* AUTOR: 			Nicolas Marroquin
+* TÍTULO:		METODOLOGÍA DE CÁLCULO DE NBIs
+* AÑO:			2018
+* AUTOR: 		Nicolas Marroquin
 *******************************************************************************************
 
 *** Outline:
@@ -58,19 +58,19 @@ clear all
 *** PART 2: Importar archivos .sas y convertirlos a .dta
 *******************************************************************************************
 	
-	import spss "$base_de_datos/enaho01-2018-100.sav",  case(lower) clear 
+	import spss 	"$base_de_datos/enaho01-2018-100.sav",  case(lower) clear 
 	tempfile	`enaho01-2018-100'
 	saveold 	enaho01-2018-100, replace 
 
-	import spss "$base_de_datos/enaho01-2018-200.sav",  case(lower) clear
+	import spss 	"$base_de_datos/enaho01-2018-200.sav",  case(lower) clear
 	tempfile	`enaho01-2018-200'
 	saveold 	enaho01-2018-200, replace 
 
-	import spss "$base_de_datos/enaho01a-2018-300.sav", case(lower) clear
+	import spss 	"$base_de_datos/enaho01a-2018-300.sav", case(lower) clear
 	tempfile	`enaho01a-2018-300'
 	saveold 	enaho01a-2018-300, replace 
 
-	import spss "$base_de_datos/enaho01a-2018-500.sav", case(lower) clear  
+	import spss 	"$base_de_datos/enaho01a-2018-500.sav", case(lower) clear  
 	tempfile	`enaho01a-2018-500'
 	saveold 	enaho01a-2018-500, replace 
 
