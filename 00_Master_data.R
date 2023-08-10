@@ -1,10 +1,10 @@
   
   '*********************************************************************************
-  # BASE DE DATOS:	ENCUESTA NACIONAL DE HOGARES (ENAHO)
-  # PROYECTO: 		  INDICADORES SOCIOECONÓMICOS
-  # TÍTULO:         MASTER DATA
-  # PERIODO:				2014-2022
-  # AUTOR: 			    NICOLAS MARROQUIN
+  # BASE DE DATOS: ENCUESTA NACIONAL DE HOGARES (ENAHO)
+  # PROYECTO:      INDICADORES SOCIOECONÓMICOS
+  # TÍTULO:        MASTER DATA
+  # PERIODO:       2014-2022
+  # AUTOR:         NICOLAS MARROQUIN
   *********************************************************************************'
   
   # Outline: -----------------------------------------------------------------------
